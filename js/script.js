@@ -88,7 +88,7 @@ navBtn.on('click', event => {
         'scrollTop': position - topMargin
     }, 1000);
     setTimeout(function(){
-        navToggle.removeClass('header_nav_sp_btn-active');
+        navToggle.removeClass('header_nav_sp_-active');
         navSlider.removeClass('header_nav_sp_slider-active');
     }, 1000);
 });

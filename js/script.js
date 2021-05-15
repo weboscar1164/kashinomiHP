@@ -15,8 +15,6 @@ sldWait = 5000; //スライド切り替え時間
 $(window).on('load', function () {  
 //最初のスライドを直ちに表示
 var sldNum = 1;
-$(sld).hide();
-$('#sld1').fadeIn(sldTime);
 $('#sld1').addClass('zoomImg');
 
 //スライド切り替え時間を設定して繰り返し
@@ -88,7 +86,7 @@ navBtn.on('click', event => {
         'scrollTop': position - topMargin
     }, 1000);
     setTimeout(function(){
-        navToggle.removeClass('header_nav_sp_-active');
+        navToggle.removeClass('header_nav_sp_toggle-active');
         navSlider.removeClass('header_nav_sp_slider-active');
     }, 1000);
 });

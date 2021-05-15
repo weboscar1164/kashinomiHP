@@ -837,6 +837,11 @@ a {
   line-height: 2.1rem;
   text-align: center;
 }
+.info_text > a {
+  color: #aec440;
+  font-weight: 700;
+  text-decoration: underline;
+}
 .info_sns_text {
   margin-top: 80px;
   font-size: 1.8rem;

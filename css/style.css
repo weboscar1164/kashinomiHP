@@ -358,6 +358,7 @@ a {
   position: relative;
   height: calc(100vh - 60px);
   margin-top: 60px;
+  overflow: hidden;
 }
 .mainvisual_bg {
   position: absolute;
@@ -365,6 +366,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: transform 5s ease;
 }
 .mainvisual_bg::before {
   content: "";
@@ -374,6 +376,9 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
+}
+.mainvisual_bg2, .mainvisual_bg3, .mainvisual_bg4 {
+  display: none;
 }
 .mainvisual_bg1 {
   background: url(../img/mv1.jpg) no-repeat center/cover;
@@ -460,6 +465,10 @@ a {
     top: -5px;
   }
 }
+.zoomImg {
+  transform: scale(1.1);
+}
+
 .intro {
   padding: 60px 0 80px;
   background: #d8ce77;
@@ -535,7 +544,7 @@ a {
   text-align: center;
 }
 .menu_decoration_plan > table {
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   margin-top: 50px;
   border-top: 1px solid #707070;

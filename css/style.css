@@ -425,7 +425,6 @@ a {
   height: 7px;
   background: #fff;
   border-radius: 50%;
-  -webkit-animation: scroll_anime 3s ease infinite;
   animation: scroll_anime 3s ease infinite;
 }
 @media (min-width: 768px) {
@@ -439,18 +438,6 @@ a {
 @media (min-width: 992px) {
   .mainvisual {
     height: calc(100vh - 80px);
-  }
-}
-
-@-webkit-keyframes scroll_anime {
-  0% {
-    top: -50px;
-  }
-  77% {
-    top: -5px;
-  }
-  100% {
-    top: -5px;
   }
 }
 
@@ -525,7 +512,6 @@ a {
 }
 .menu_decoration_img > img {
   height: 160px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 .menu_decoration_title {
@@ -557,7 +543,6 @@ a {
   line-height: 2.1rem;
 }
 .menu_decoration_plan > table > tbody > tr > th {
-  -moz-text-align-last: left;
   text-align-last: left;
 }
 .menu_decoration_plan > table > tbody > tr > td {
@@ -591,7 +576,6 @@ a {
 .menu_item_img > img {
   width: 100%;
   height: 225px;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 .menu_item_text {
@@ -610,11 +594,23 @@ a {
   font-size: 1.8rem;
   line-height: 2.7rem;
 }
+.menu_item_text_desc > a {
+  color: #aec440;
+  font-weight: 700;
+  text-decoration: underline;
+}
 .menu_item_text_price {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   padding-right: 3rem;
+}
+.menu_item_text_price > dd > span {
+  font-size: 1.2rem;
+}
+.menu_item_text_price_notice {
+  margin-top: 5px;
+  font-size: 1.2rem;
 }
 .menu_item_text_size {
   margin-top: 20px;
@@ -1049,20 +1045,7 @@ a {
     background: #6b7925;
   }
   .totop:hover::before, .totop:hover::after {
-    -webkit-animation: totop_animation 1.5s infinite;
     animation: totop_animation 1.5s infinite;
-  }
-}
-
-@-webkit-keyframes totop_animation {
-  10% {
-    top: 12px;
-  }
-  30% {
-    top: 15px;
-  }
-  100% {
-    top: 15px;
   }
 }
 
@@ -1081,25 +1064,7 @@ a {
   fill: #fff;
   stroke: #fff;
   stroke-width: 2px;
-  -webkit-animation: svg 5s ease-in both infinite;
   animation: svg 5s ease-in both infinite;
-}
-
-@-webkit-keyframes svg {
-  0% {
-    fill: transparent;
-    stroke-dasharray: 2000px;
-    stroke-dashoffset: 2000px;
-  }
-  20% {
-    stroke-dashoffset: 0;
-  }
-  30% {
-    fill: transparent;
-  }
-  50% {
-    fill: #111;
-  }
 }
 
 @keyframes svg {
